@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            border: 3px solid red;
+            max-width:1140px ;
+            margin: 0 auto;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .container img{
+            width: 100%;
+        }
+
+        .container div{
+            width: 50%;
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column-reverse;
+            }
+            .container div{
+                width: 100%;
+            }
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <head>
+        <h1>Responsive Website</h1>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Relative unit</li>
+            <li>Body max-width and horizontal center align</li>
+            <li>image fluid</li>
+            <li>two column flex and use media query with flex 
+                direction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu Responsivve : will need JavaScript</li>
+        </ol>
+    </head>
+
+    <main>
+        <div class="container">
+            <div> 
+                <img src="images/food.avif" alt="">
+            </div>
+            <div>
+                <img src="images/cat-and-kitten-snuggling.jpg" alt="">
+            </div>
+        </div>
+       
+        
+    </main>
+</body>
+</html>
